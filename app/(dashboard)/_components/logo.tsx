@@ -7,7 +7,8 @@ export const Logo = () => {
             width={100}
             alt="logo"
             /* src="/Orca.png" */
-            src="/Orca2.png"
+            /* src="/Orca2.png" */
+            src="/Orca2White.png"
         />
     )
 }
