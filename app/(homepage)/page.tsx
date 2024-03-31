@@ -1,21 +1,19 @@
 import Link from "next/link"
 import { Navbar } from "./_components/Navbar"
+import { Footer } from "./_components/Footer"
+import { HomeSection } from "./_components/HomeSection"
 
 export default function Homepage() {
     return (
-        <main>
+        <main class="bg-primary">
             <div>
                 <Navbar/>
             </div>
             <div>
-                <Link href="/About-us">
-                quienes somos
-                </Link>
+                <HomeSection/>
             </div>
             <div>
-            <Link href="/sign-in">
-                login
-            </Link>
+                <Footer/>
             </div>
             
         </main>

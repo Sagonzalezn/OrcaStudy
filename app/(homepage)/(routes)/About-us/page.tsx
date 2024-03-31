@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function Aboutus() {
+export default function AboutUs() {
     return (
         <main>
             <h1>
