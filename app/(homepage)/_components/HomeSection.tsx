@@ -1,8 +1,31 @@
-import React from 'react'
+'use client'
 
+import React, { useEffect } from 'react'
+import './styles.css';
 export const HomeSection = () => {
+    useEffect(() => {
+        const scrollers = document.querySelectorAll<HTMLElement>(".scroller");
+
+        scrollers.forEach(scroller => {
+            const scrollerInner = scroller.querySelector<HTMLElement>('.scroller-inner');
+            
+            if (scrollerInner){
+                const scrollerContent = Array.from(scrollerInner?.children);
+                
+                scrollerContent.forEach(item => {
+                    const duplicatedItem = item.cloneNode(true) as HTMLElement;
+                    duplicatedItem.setAttribute('aria-hidden', 'true');
+                    scrollerInner.appendChild(duplicatedItem);
+                })
+            }
+
+            
+        });
+    }, []);
+    
+
     return (
-        <main class="font-roboto">
+        <main className="font-roboto">
 
             <div className="flex flex-col items-center mt-9 lg:mt-20 bg-primary pt-20 px-20 top-0">
                 <h2 className="text-4xl sm:text-3.5xl lg:text-4xl text-left tracking-wide text-white">
@@ -10,7 +33,7 @@ export const HomeSection = () => {
                     {" "}
                     con nuestros cursos en linea!
                 </h2>
-                <img src="Orca.png" alt="Descripción de la imagen" class="w-21 h-21"/>
+                <img src="Orca.png" alt="Descripción de la imagen" className="w-21 h-21"/>
                 
                 <p className="mt-10 text-lg text-left text-white max-w-4xl">
                 Encuentra cursos de diferentes industrias al mejor precio
@@ -18,11 +41,28 @@ export const HomeSection = () => {
                 </p>
                 <div className="flex justify-center my-10">
                     <a
-                    href="#"
+                    href="/sign-up"
                     className="bg-colorbotones py-3 px-4 mx-3 rounded-md"
                     >
-                    Empieza a aprender ahora
+                    Empieza a aprender ahora!
                     </a>
+                </div>
+                <div className='scroller'>
+                    <ul className='scroller-inner'>
+                        <li>Computación</li>
+                        <li>Contabilidad</li>
+                        <li>Cine</li>
+                        <li>Fitness</li>
+                        <li>Ingeniería</li>
+                        <li>Musica</li>
+                        <li>Matematicas</li>
+                        <li>Idiomas</li>
+                        <li>Literatura</li>
+                        <li>Arte</li>
+                        <li>Diseño</li>
+                        <li>IA</li>
+                        <li>Negocios</li>
+                    </ul>
                 </div>
              </div>
 
@@ -38,10 +78,10 @@ export const HomeSection = () => {
                 </p>
                 <div className="flex justify-center my-10">
                     <a
-                    href="#"
+                    href="/sign-up"
                     className="bg-colorbotones py-3 px-4 mx-3 rounded-md"
                     >
-                    Empieza a aprender ahora
+                    Quiero matricularme!
                     </a>
                 </div>
              </div>

@@ -5,7 +5,7 @@ import { HomeSection } from "./_components/HomeSection"
 
 export default function Homepage() {
     return (
-        <main class="bg-primary">
+        <main className="bg-primary">
             <div>
                 <Navbar/>
             </div>
