@@ -1,0 +1,22 @@
+.scroller {
+    max-width: 600px;
+    color: white;
+}
+
+.scroller-inner {
+    width: max-content;
+    align-items: center;
+    gap: 2rem;
+    display: flex;
+}
+
+.scroller .scroller-inner {
+    flex-wrap: nowrap;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(-50%)
+    }
+}
