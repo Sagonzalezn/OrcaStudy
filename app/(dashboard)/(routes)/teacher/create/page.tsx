@@ -43,7 +43,7 @@ const CreatePage = () => {
             router.push(`/teacher/courses/${response.data.id}`);
             toast.success("Curso creado exitosamente")
         } catch {
-            toast.error("Algo salio mal")
+            toast.error("Algo salio mal :)")
         }
     }
 

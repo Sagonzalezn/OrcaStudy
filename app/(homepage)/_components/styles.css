@@ -1,6 +1,7 @@
 .scroller {
-    max-width: 600px;
+    max-width: 110%;
     color: white;
+    overflow: hidden;
 }
 
 .scroller-inner {
@@ -11,6 +12,7 @@
 }
 
 .scroller .scroller-inner {
+    padding-block: 1rem;
     flex-wrap: nowrap;
     animation: scroll 20s linear infinite;
 }
