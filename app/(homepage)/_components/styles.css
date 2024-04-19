@@ -5,7 +5,7 @@
 }
 
 .scroller-inner {
-    width: max-content;
+    width: fit-content;
     align-items: center;
     gap: 2rem;
     display: flex;
@@ -19,6 +19,6 @@
 
 @keyframes scroll {
     to {
-        transform: translate(-50%)
+        transform: translate(calc(-50% - 1rem));
     }
 }
