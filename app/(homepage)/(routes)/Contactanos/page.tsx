@@ -1,16 +1,16 @@
 import Link from "next/link";
-import { Footer } from '../../_components/Footer'; 
+import { Footer } from '../../_components/Footer'; // Importa el componente Footer utilizando la ruta relativa correcta
 import { NavbarSimple } from '../../_components/NavbarSimple';
-import { AboutUsSection } from "../../_components/AboutUsSection";
+import { ContactSection } from "../../_components/ContactSection";
 
-export default function AboutUs() {
+export default function Contact() {
     return (
         <main className="bg-primary">
             <div>
                 <NavbarSimple/>
             </div>
             <div>
-                <AboutUsSection/>
+                <ContactSection/>
             </div>
             <div>
                 <Footer/>

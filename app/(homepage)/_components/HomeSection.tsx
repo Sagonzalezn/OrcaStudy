@@ -29,11 +29,11 @@ export const HomeSection = () => {
 
             <div className="flex flex-col items-center mt-9 lg:mt-20 bg-primary pt-20 px-20 top-0">
                 <h2 className="text-4xl sm:text-3.5xl lg:text-4xl text-left tracking-wide text-white">
-                    ¡LLeva tu desarrollo profesional al siguiente nivel 
+                    ¡Lleva tu desarrollo profesional al siguiente nivel 
                     {" "}
-                    con nuestros cursos en linea!
+                    con nuestros cursos en línea!
                 </h2>
-                <img src="Orca.png" alt="Descripción de la imagen" className="w-21 h-21"/>
+                <img src="Orca.png" alt="Descripción de la imagen" className="w-100 sm:w-80 lg:w-100 h-auto"/>
                 
                 <p className="mt-10 text-lg text-left text-white max-w-4xl">
                 Encuentra cursos de diferentes industrias al mejor precio
