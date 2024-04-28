@@ -2,8 +2,6 @@
 
 import * as z from "zod";
 import axios from "axios";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
@@ -35,17 +33,19 @@ export const ImageForm = ({
 
     const router = useRouter();
 
-    const onSubmit = async (values: z.infer<typeof formSchema>) => {
-        try{
-            await axios.patch(`/api/courses/${courseId}`, values);
-            toast.success("Curso Actualizado");
-            toggleEdit();
-            router.refresh();
-        } catch {
-            toast.error("Algo salio mal :O")
-        }
+    const onSubmit = (values: z.infer<typeof formSchema>) => {
+        setTimeout(async () => {
+            try{
+                await axios.patch(`/api/courses/${courseId}`, values).then();
+                toast.success("Curso Actualizado");
+                toggleEdit();
+                router.refresh()
+            } catch {
+                toast.error("Algo salio mal :O")
+            }
+        }, 1000);
     }
-    
+
     return ( 
         <div className="mt-6 border bg-slate-100 rounded-md p-4">
             <div className="font-medium flex items-center justify-between">
