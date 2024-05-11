@@ -2,7 +2,7 @@ import { Category, Course } from "@prisma/client";
 
 import { CourseCard } from "./course-card";
 
-type CourseWithProgressWithCategory = course & {
+type CourseWithProgressWithCategory = Course & {
     category: Category | null;
     chapters: { id: string }[];
     progress: number | null;
