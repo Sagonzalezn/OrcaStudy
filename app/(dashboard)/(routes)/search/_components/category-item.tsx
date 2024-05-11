@@ -15,7 +15,7 @@ import { cn } from '@/lib/utils';
 interface CategoryItemProps {
     label: string;
     value?: string;
-    icons?: IconType
+    icon?: IconType
 }
 
 

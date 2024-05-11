@@ -37,10 +37,10 @@ export const Categories = ({
         overflow-x-auto pb-2'>
             {items.map((item)=> (
                 <CategoryItem
-                key={item.id}
-                label={item.name}
-                icon={iconMap[item.name]}
-                value={item.id}
+                    key={item.id}
+                    label={item.name}
+                    icon={iconMap[item.name]}
+                    value={item.id}
                 />
             ))}
         </div>
