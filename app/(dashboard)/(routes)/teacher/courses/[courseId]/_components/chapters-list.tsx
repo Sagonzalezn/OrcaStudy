@@ -95,17 +95,17 @@ export const ChaptersList = ({
                     {chapter.title}
                     <div className="ml-auto pr-2 flex items-center gap-x-2">
                       {chapter.isFree && (
-                        <Badge>
-                          Free
+                        <Badge className="text-black bg-green-400">
+                          Gratis
                         </Badge>
                       )}
                       <Badge
                         className={cn(
-                          "bg-slate-500",
-                          chapter.isPublished && "bg-sky-700"
+                          "bg-black text-white",
+                          chapter.isPublished && "bg-sky-700 text-white"
                         )}
                       >
-                        {chapter.isPublished ? "Published" : "Draft"}
+                        {chapter.isPublished ? "Publicado" : "Borrador"}
                       </Badge>
                       <Pencil
                         onClick={() => onEdit(chapter.id)}
