@@ -40,7 +40,7 @@ export const ChapterVideoForm = ({
       toggleEdit();
       router.refresh();
     } catch {
-      toast.error("Algo salio mal $");
+      toast.error("Algo salió mal $");
     }
   }
 
