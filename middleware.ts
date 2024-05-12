@@ -6,7 +6,7 @@ export default authMiddleware({
   //debug: true,
   // Allow signed out users to access the specified routes:
   // publicRoutes: ['/anyone-can-visit-this-route'],
-  publicRoutes: ["","/","/About-us","/sign-in","/sign-up", "/api/uploadthing","/Contactanos"]
+  publicRoutes: ["","/","/About-us","/Contactanos","/sign-in","/sign-up","/api/uploadthing","/api/webhook"]
 });
  
 export const config = {
