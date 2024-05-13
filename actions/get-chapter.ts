@@ -1,4 +1,4 @@
-import { bd } from "/lib/db";
+import { db } from "@/lib/db";
 
 import { Attachment, Chapter } from "@prisma/client";
 
@@ -12,7 +12,7 @@ export const getChapter = async ({
     userId,
     courseId,
     chapterId,
-}: getChapterProps) => {
+}: GetChapterProps) => {
     try {
         const purchase = await db.purchase.findUnique({
             where: {
