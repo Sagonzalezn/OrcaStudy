@@ -61,7 +61,7 @@ export const ChaptersForm = ({
       toggleCreating();
       router.refresh();
     } catch {
-      toast.error("Algo salio mal en la creación de capítulo");
+      toast.error("Algo salió mal en la creación de capítulo");
     }
   }
 
@@ -75,7 +75,7 @@ export const ChaptersForm = ({
       toast.success("Capítulos Reordenados Exitosamente");
       router.refresh();
     } catch {
-      toast.error("Algo salio mal al reordenar los capítulos");
+      toast.error("Algo salió mal al reordenar los capítulos");
     } finally {
       setIsUpdating(false);
     }
@@ -93,14 +93,14 @@ export const ChaptersForm = ({
         </div>
       )}
       <div className="font-medium flex items-center justify-between">
-        Capitulos del Curso
+        Capítulos del Curso
         <Button onClick={toggleCreating} variant="ghost">
           {isCreating ? (
             <>Cancelar</>
           ) : (
             <>
               <PlusCircle className="h-4 w-4 mr-2" />
-              Añadir Capitulo
+              Añadir Capítulo
             </>
           )}
         </Button>
@@ -119,7 +119,7 @@ export const ChaptersForm = ({
                   <FormControl>
                     <Input
                       disabled={isSubmitting}
-                      placeholder="e.g. 'Introducción al curso'"
+                      placeholder="e.j. 'Introducción al curso'"
                       {...field}
                     />
                   </FormControl>

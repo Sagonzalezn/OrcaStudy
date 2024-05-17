@@ -27,8 +27,9 @@ interface PriceFormProps {
   courseId: string;
 };
 
+//se agregó .positive() para validar que no sea negativo
 const formSchema = z.object({
-  price: z.coerce.number(),
+  price: z.coerce.number().positive(),
 });
 
 export const PriceForm = ({
@@ -53,11 +54,11 @@ export const PriceForm = ({
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
       await axios.patch(`/api/courses/${courseId}`, values);
-      toast.success("Course updated");
+      toast.success("Curso actualizado");
       toggleEdit();
       router.refresh();
     } catch {
-      toast.error("Something went wrong");
+      toast.error("Algo salió mal");
     }
   }
 
@@ -101,7 +102,7 @@ export const PriceForm = ({
                   <FormControl>
                     <Input
                       type="number"
-                      step="0.01"
+                      step="100"
                       disabled={isSubmitting}
                       placeholder="Indica un precio para tu curso"
                       {...field}
@@ -116,7 +117,7 @@ export const PriceForm = ({
                 disabled={!isValid || isSubmitting}
                 type="submit"
               >
-                Save
+                Guardar
               </Button>
             </div>
           </form>

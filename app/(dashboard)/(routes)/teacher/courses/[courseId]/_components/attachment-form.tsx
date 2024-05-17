@@ -39,7 +39,7 @@ export const AttachmentForm = ({
         toggleEdit();
         router.refresh();
       } catch {
-        toast.error("Algo salio mal al adjuntar");
+        toast.error("Algo salió mal al adjuntar");
       }
     }, 1000);
   };
@@ -51,7 +51,7 @@ export const AttachmentForm = ({
       toast.success("Adjunto Eliminado Exitosamente");
       router.refresh();
     } catch {
-      toast.error("Algo salio mal al eliminar");
+      toast.error("Algo salió mal al eliminar");
     } finally {
       setDeletingId(null);
     }
@@ -77,7 +77,7 @@ export const AttachmentForm = ({
         <>
           {initialData.attachments.length === 0 && (
             <p className="text-sm mt-2 text-slate-500 italic">
-              No hay adjuntos.
+              No hay adjuntos
             </p>
           )}
           {initialData.attachments.length > 0 && (

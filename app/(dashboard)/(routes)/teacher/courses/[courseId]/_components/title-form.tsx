@@ -28,7 +28,7 @@ interface TitleFormProps {
 
 const formSchema = z.object({
     title: z.string().min(1, {
-        message: "Titulo Requerido",
+        message: "Título Requerido",
     }),
 });
 
@@ -56,21 +56,21 @@ export const TitleForm = ({
             toggleEdit();
             router.refresh();
         } catch {
-            toast.error("Algo salio mal :((")
+            toast.error("Algo salió mal :(")
         }
     }
     
     return ( 
         <div className="mt-6 border bg-slate-100 rounded-md p-4">
             <div className="font-medium flex items-center justify-between">
-                Titulo de Curso
+                Título de Curso
                 <Button onClick={toggleEdit} variant="ghost">
                     {isEditing ? (
-                        <>Cancel</>
+                        <>Cancelar</>
                     ) : (
                         <>
                             <Pencil className="h-4 w-4 mr-2"/>
-                            Editar Titulo
+                            Editar Título
                         </>
                     )}
                 </Button>
@@ -94,7 +94,7 @@ export const TitleForm = ({
                                     <FormControl>
                                         <Input
                                             disabled = {isSubmitting}
-                                            placeholder="e.g. 'Desarollo Web Avanzado'"
+                                            placeholder="e.j. 'Desarollo Web Avanzado'"
                                             {...field}
                                         />
                                     </FormControl>

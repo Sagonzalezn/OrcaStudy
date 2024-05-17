@@ -5,13 +5,15 @@ interface DataCardProps {
     value: number;
     label: string;
     shouldFormat?: boolean;
+    currency?: string;
 }
 
 export const DataCard = ({
     value,
     label,
     shouldFormat,
-}:DataCardProps) => {
+    currency = 'COP', // Establecer valor por defecto a 'COP'
+}: DataCardProps) => {
     return (
         <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -21,9 +23,9 @@ export const DataCard = ({
             </CardHeader>
             <CardContent>
                 <div className="text-2xl font-bold">
-                    {shouldFormat ? formatPrice(value) : value}
+                    {shouldFormat ? formatPrice(value, currency) : value}
                 </div>
             </CardContent>
         </Card>
-    )
+    );
 }

@@ -3,7 +3,7 @@
 import { UserButton } from "@clerk/nextjs"
 import { usePathname } from "next/navigation"
 import { Button } from "./ui/button";
-import { LogOut } from "lucide-react";
+import { Book, PencilRuler } from "lucide-react";
 import Link from "next/link";
 import { SearchInput } from "./search-input";
 
@@ -25,14 +25,15 @@ export const NavbarRoutes = () => {
                 {isTeacherPage || isCoursePage ? (
                     <Link href="/dashboard">
                         <Button size="sm" variant="ghost">
-                            <LogOut className="h-4 w-4 mr-2"/>
-                            Modo Estudiante
+                            <Book className="h-4 w-4 mr-2"/>
+                            Cambiar a Estudiante
                         </Button>
                     </Link>
                 ) : (
                     <Link href="/teacher/courses">
-                    <Button size="sm" variant="ghost">
-                            Modo Maestro
+                        <Button size="sm" variant="ghost">
+                            <PencilRuler className="h-4 w-4 mr-2"/>
+                            Cambiar a Maestro
                         </Button> 
                     </Link>
                 )}

@@ -19,7 +19,7 @@ interface ImageFormProps {
 
 const formSchema = z.object({
     imageUrl: z.string().min(1, {
-        message: "Imagen Requerida",
+        message: "Imágen Requerida",
     }),
 });
 
@@ -41,7 +41,7 @@ export const ImageForm = ({
                 toggleEdit();
                 router.refresh()
             } catch {
-                toast.error("Algo salio mal :O")
+                toast.error("Algo salió mal")
             }
         }, 1000);
     }
@@ -52,7 +52,7 @@ export const ImageForm = ({
                 Imagen del Curso
                 <Button onClick={toggleEdit} variant="ghost" className="mb-3">
                     {isEditing && (
-                        <>Cancel</>
+                        <>Cancelar</>
                     )}
                     {!isEditing && !initialData.imageUrl && (
                         <>

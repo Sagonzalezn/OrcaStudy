@@ -58,7 +58,7 @@ export const DescriptionForm = ({
             toggleEdit();
             router.refresh();
         } catch {
-            toast.error("Algo salio mal :(")
+            toast.error("Algo salió mal :(")
         }
     }
     
@@ -68,7 +68,7 @@ export const DescriptionForm = ({
                 Descripción de Curso
                 <Button onClick={toggleEdit} variant="ghost">
                     {isEditing ? (
-                        <>Cancel</>
+                        <>Cancelar</>
                     ) : (
                         <>
                             <Pencil className="h-4 w-4 mr-2"/>
@@ -99,7 +99,7 @@ export const DescriptionForm = ({
                                     <FormControl>
                                         <Textarea
                                             disabled = {isSubmitting}
-                                            placeholder="e.g. 'El tema de este curso es...'"
+                                            placeholder="e.j. 'El tema de este curso es...'"
                                             {...field}
                                         />
                                     </FormControl>

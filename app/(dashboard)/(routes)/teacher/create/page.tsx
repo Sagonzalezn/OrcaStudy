@@ -22,7 +22,7 @@ import toast from "react-hot-toast";
 
 const formSchema = z.object({
     title: z.string().min(1, {
-        message: "Titulo requerido",
+        message: "Título requerido",
     }),
 });
 
@@ -43,7 +43,7 @@ const CreatePage = () => {
             router.push(`/teacher/courses/${response.data.id}`);
             toast.success("Curso creado exitosamente")
         } catch {
-            toast.error("Algo salio mal :)")
+            toast.error("Algo salió mal :(")
         }
     }
 
@@ -54,7 +54,7 @@ const CreatePage = () => {
                     Dale un nombre a tu curso
                 </h1>
                 <p className="text-sm text-slate-600">
-                    Como se llamara tu curso?
+                    ¿Cómo se llamará tu curso?
                 </p>
                 <Form {...form}>
                     <form
@@ -67,24 +67,24 @@ const CreatePage = () => {
                             render={({ field }) => (
                                 <FormItem>
                                     <FormLabel>
-                                        Titulo del Curso
+                                        Título del Curso:
                                     </FormLabel>
                                     <FormControl>
                                         <Input
                                             disabled={isSubmitting}
-                                            placeholder="e.g. 'Desarrollo Web Avanzado'"
+                                            placeholder="e.j. 'Desarrollo Web Avanzado'"
                                             {...field}
                                         />
                                     </FormControl>
                                     <FormDescription>
-                                        Que enseñaras en este curso?
+                                        ¿Qué enseñarás en este curso?
                                     </FormDescription>
                                     <FormMessage/>
                                 </FormItem>
                             )}
                         />
                         <div className="flex items-center gap-x-2">
-                                <Link href="/">
+                                <Link href="/teacher/courses">
                                     <Button type="button" variant="ghost" className="bg-colorbotones">
                                         Cancelar
                                     </Button>
