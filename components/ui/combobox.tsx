@@ -42,14 +42,14 @@ export const Combobox = ({
         >
           {value
             ? options.find((option) => option.value === value)?.label
-            : "Select option..."}
+            : "Selecciona la opción..."}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-full p-0">
         <Command>
-          <CommandInput placeholder="Search option..." />
-          <CommandEmpty>No option found.</CommandEmpty>
+          <CommandInput placeholder="Buscar..." />
+          <CommandEmpty>No hay resultados</CommandEmpty>
           <CommandGroup>
             {options.map((option) => (
               <CommandItem
