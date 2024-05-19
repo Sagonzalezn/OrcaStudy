@@ -39,7 +39,7 @@ export const ChapterActions = ({
 
       router.refresh();
     } catch {
-      toast.error("Algo salio mal?");
+      toast.error("Algo salió mal");
     } finally {
       setIsLoading(false);
     }
@@ -55,7 +55,7 @@ export const ChapterActions = ({
       router.refresh();
       router.push(`/teacher/courses/${courseId}`);
     } catch {
-      toast.error("Algo salio mal??");
+      toast.error("Algo salió mal");
     } finally {
       setIsLoading(false);
     }
@@ -72,7 +72,7 @@ export const ChapterActions = ({
         {isPublished ? "Unpublish" : "Publish"}
       </Button>
       <ConfirmModal onConfirm={onDelete}>
-        <Button size="sm" disabled={isLoading}>
+        <Button size="sm" disabled={isLoading} variant='outline'>
           <Trash className="h-4 w-4" />
         </Button>
       </ConfirmModal>

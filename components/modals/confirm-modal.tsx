@@ -22,24 +22,26 @@ export const ConfirmModal = ({
   onConfirm
 }: ConfirmModalProps) => {
   return (
-    <AlertDialog>
-      <AlertDialogTrigger asChild>
-        {children}
-      </AlertDialogTrigger>
-      <AlertDialogContent>
-        <AlertDialogHeader>
-          <AlertDialogTitle>Estas seguro?</AlertDialogTitle>
-          <AlertDialogDescription>
-            Esta acción no se puede revertir
-          </AlertDialogDescription>
-        </AlertDialogHeader>
-        <AlertDialogFooter>
-          <AlertDialogCancel>Cancelar</AlertDialogCancel>
-          <AlertDialogAction onClick={onConfirm}>
-            Continuar
-          </AlertDialogAction>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
+    <div className='flex items-center'>
+      <AlertDialog>
+        <AlertDialogTrigger asChild>
+          {children}
+        </AlertDialogTrigger>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>¿Estás seguro?</AlertDialogTitle>
+            <AlertDialogDescription>
+              Esta acción no se puede deshacer.
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel>Cancelar</AlertDialogCancel>
+            <AlertDialogAction onClick={onConfirm}>
+              Continuar
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
+    </div>
   );
 };

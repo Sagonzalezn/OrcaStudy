@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
 import { ToastProvider } from '../components/providers/toaster-provider'
 
+import { esES } from "@clerk/localizations";
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -17,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider localization={esES}>
       <html lang="en">
         <body className={inter.className}>
           <ToastProvider/>

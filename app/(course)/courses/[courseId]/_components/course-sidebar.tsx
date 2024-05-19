@@ -1,10 +1,11 @@
-import { db } from "@/lib/db";
-
 import { auth } from "@clerk/nextjs";
-import { Chapter, Course, UserProgress } from "@prisma/client";
+import { Chapter, Course, UserProgress } from "@prisma/client"
 import { redirect } from "next/navigation";
-import { CourseSidebarItem } from "./course-sidebar-item";
+
+import { db } from "@/lib/db";
 import { CourseProgress } from "@/components/course-progress";
+
+import { CourseSidebarItem } from "./course-sidebar-item";
 
 interface CourseSidebarProps {
   course: Course & {
@@ -15,7 +16,6 @@ interface CourseSidebarProps {
   progressCount: number;
 };
 
-
 export const CourseSidebar = async ({
   course,
   progressCount,
@@ -23,7 +23,7 @@ export const CourseSidebar = async ({
   const { userId } = auth();
 
   if (!userId) {
-    return redirect("/")
+    return redirect("/");
   }
 
   const purchase = await db.purchase.findUnique({
@@ -36,10 +36,9 @@ export const CourseSidebar = async ({
   });
 
   return (
-    <div className='h-full border-r flex flex-col overflow-y-auto 
-        shadow-sm'>
-      <div className='p-8 flex flex-col border-b'>
-        <h1 className='font-semibold'>
+    <div className="h-full border-r flex flex-col overflow-y-auto shadow-sm">
+      <div className="p-8 flex flex-col border-b">
+        <h1 className="font-semibold">
           {course.title}
         </h1>
         {purchase && (
@@ -51,7 +50,7 @@ export const CourseSidebar = async ({
           </div>
         )}
       </div>
-      <div className='flex flex-cp; w-full'>
+      <div className="flex flex-col w-full">
         {course.chapters.map((chapter) => (
           <CourseSidebarItem
             key={chapter.id}
