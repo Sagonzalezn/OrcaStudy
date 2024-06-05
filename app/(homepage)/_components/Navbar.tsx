@@ -9,8 +9,9 @@ export const Navbar = () => {
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6 bg-primary">
   <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
       <img src="1 white no letters.svg" className="h-8" alt="OrcaStudyLogo"/>
-      <span className="self-center text-xl font-roboto
-      font-semibold whitespace-nowrap text-white">OrcaStudy</span>
+      <span class="hidden md:inline self-center text-xl font-roboto font-semibold whitespace-nowrap text-white">
+        OrcaStudy
+    </span>
   </a>
   <div className=" flex md:order-2 space-x-3 md:space-x-3 rtl:space-x-reverse justify-end bg-primary font-roboto">
       <SignedOut>

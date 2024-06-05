@@ -27,24 +27,23 @@ export const HomeSection = () => {
     return (
         <main className="font-roboto">
 
-            <div className="flex flex-col items-center mt-9 lg:mt-20 bg-primary pt-20 px-20 top-0">
+            <div className="flex flex-col items-center mt-9 lg:mt-20 bg-primary pt-20 px-20 top-2">
                 <h2 className="text-4xl sm:text-3.5xl lg:text-4xl text-left tracking-wide text-white">
-                    ¡Lleva tu desarrollo profesional al siguiente nivel 
+                    ¡Bienvenido a OrcaStudy, aprende
                     {" "}
-                    con nuestros cursos en línea!
+                    a buen precio con nuestros cursos en línea!
                 </h2>
                 <img src="Orca.png" alt="Descripción de la imagen" className="w-100 sm:w-80 lg:w-100 h-auto"/>
                 
                 <p className="mt-10 text-lg text-left text-white max-w-4xl">
-                Encuentra cursos de diferentes industrias al mejor precio
-                y creados por expertos en cada area.
+                Encuentra o crea cursos de diferentes áreas del conocimiento gracias a nosotros.
                 </p>
                 <div className="flex justify-center my-10">
                     <a
                     href="/sign-up"
                     className="bg-colorbotones py-3 px-4 mx-3 rounded-md"
                     >
-                    Empieza a aprender ahora!
+                    ¡Empieza a aprender ahora!
                     </a>
                 </div>
                 <div className='scroller'>
@@ -54,8 +53,8 @@ export const HomeSection = () => {
                         <li>Cine</li>
                         <li>Fitness</li>
                         <li>Ingeniería</li>
-                        <li>Musica</li>
-                        <li>Matematicas</li>
+                        <li>Música</li>
+                        <li>Matemáticas</li>
                         <li>Idiomas</li>
                         <li>Literatura</li>
                         <li>Arte</li>
@@ -68,20 +67,20 @@ export const HomeSection = () => {
 
              <div className="flex flex-col items-center mt-9 lg:mt-20 bg-white pt-20 px-20 top-0">
                 <h2 className="text-4xl sm:text-3.5xl lg:text-4xl text-left tracking-wide">
-                    ¡LLeva tu desarrollo profesional al siguiente nivel 
+                    ¡Lleva tu desarrollo profesional al siguiente nivel 
                     {" "}
                     con nuestros cursos en linea!
                 </h2>
                 <p className="mt-10 text-lg text-left max-w-4xl">
                 Encuentra cursos de diferentes industrias al mejor precio
-                y creados por expertos en cada area.
+                y creados por expertos en cada área.
                 </p>
                 <div className="flex justify-center my-10">
                     <a
                     href="/sign-up"
                     className="bg-colorbotones py-3 px-4 mx-3 rounded-md"
                     >
-                    Quiero matricularme!
+                    ¡Quiero matricularme!
                     </a>
                 </div>
              </div>
