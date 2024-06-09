@@ -9,7 +9,7 @@ export const Navbar = () => {
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6 bg-primary">
   <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
       <img src="1 white no letters.svg" className="h-8" alt="OrcaStudyLogo"/>
-      <span class="hidden md:inline self-center text-xl font-roboto font-semibold whitespace-nowrap text-white">
+      <span className="hidden md:inline self-center text-xl font-roboto font-semibold whitespace-nowrap text-white">
         OrcaStudy
     </span>
   </a>
