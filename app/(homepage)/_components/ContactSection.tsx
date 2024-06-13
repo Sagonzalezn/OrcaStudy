@@ -56,7 +56,7 @@ export const ContactSection = () => {
                     <div className='card'>
                         <div className='content'>
                             <div className='imgBx'>
-                                <img src='/samuel.png' alt='imagen'></img>
+                                <img src='/samuel.jpg' alt='imagen'></img>
                             </div>
                             <div className='contentBx'>
                                 <h4>Samuel Gonzalez</h4>
