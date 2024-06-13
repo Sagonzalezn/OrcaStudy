@@ -1,9 +1,12 @@
 'use client'
 import React from 'react'
+import './styles2.css';
 
 export const ContactSection = () => {
     return (
+        
         <main className="font-roboto">
+            
 
             <div className="flex flex-col items-center mt-12 lg:mt-20 bg-primary pt-20 px-8 lg:px-20">
                 <h1 className="text-5xl lg:text-6xl text-white text-center">
@@ -20,7 +23,8 @@ export const ContactSection = () => {
                     </div>
                 </div>
              </div>
-
+             
+             
              <div className="flex flex-col items-center mt-12 lg:mt-20 bg-white pt-20 px-8 lg:px-20 text-center">
                 <h2 className="text-4xl lg:text-5xl text-black mb-6">
                     ¿Cómo Contactarnos?
@@ -47,6 +51,51 @@ export const ContactSection = () => {
                 <h2 className="text-4xl lg:text-5xl text-primary text-center mt-12">
                     ¡Esperamos escucharte pronto!
                 </h2>
+
+                <div className='container mt-6'>
+                    <div className='card'>
+                        <div className='content'>
+                            <div className='imgBx'>
+                                <img src='/Samuel.png' alt='imagen'></img>
+                            </div>
+                            <div className='contentBx'>
+                                <h4>Samuel Gonzalez</h4>
+                                <h5>Developer</h5>
+                            </div>
+                            <div>
+                                <a href='#'><i className="fa-brands fa-linkedin fa-2xl mt-5 mb-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='card'>
+                        <div className='content'>
+                            <div className='imgBx'>
+                                <img src='/sebastian.jpg' alt='imagen'></img>
+                            </div>
+                            <div className='contentBx'>
+                                <h4>Sebastian Molina</h4>
+                                <h5>Developer</h5>
+                            </div>
+                            <div>
+                                <a href='#'><i className="fa-brands fa-linkedin fa-2xl mt-5 mb-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='card'>
+                        <div className='content'>
+                            <div className='imgBx'>
+                                <img src='/boy.png' alt='imagen'></img>
+                            </div>
+                            <div className='contentBx'>
+                                <h4>Javier Esteban Pacavita</h4>
+                                <h5>Developer</h5>
+                            </div>
+                            <div>
+                                <a href='#'><i className="fa-brands fa-linkedin fa-2xl mt-5 mb-5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
              </div>
         </main>
     );
