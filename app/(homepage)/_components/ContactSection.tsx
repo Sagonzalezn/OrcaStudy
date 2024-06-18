@@ -1,12 +1,18 @@
 'use client'
 import React from 'react'
+import Head from 'next/head';
 import './styles2.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 
 export const ContactSection = () => {
     return (
         
         <main className="font-roboto">
-            
+            <Head>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+            </Head>
 
             <div className="flex flex-col items-center mt-12 lg:mt-20 bg-primary pt-20 px-8 lg:px-20">
                 <h1 className="text-5xl lg:text-6xl text-white text-center">
@@ -63,7 +69,9 @@ export const ContactSection = () => {
                                 <h5>Developer</h5>
                             </div>
                             <div>
-                                <a href='#'><i className="fa-brands fa-linkedin fa-2xl mt-5 mb-5"></i></a>
+                                <a href="https://www.linkedin.com/in/sagonzalezn" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faLinkedin} className="fa-2x mt-1 mb-5" />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -77,7 +85,9 @@ export const ContactSection = () => {
                                 <h5>Developer</h5>
                             </div>
                             <div>
-                                <a href='#'><i className="fa-brands fa-linkedin fa-2xl mt-5 mb-5"></i></a>
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faLinkedin} className="fa-2x mt-1 mb-5" />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -91,7 +101,9 @@ export const ContactSection = () => {
                                 <h5>Developer</h5>
                             </div>
                             <div>
-                                <a href='#'><i className="fa-brands fa-linkedin fa-2xl mt-5 mb-5"></i></a>
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faLinkedin} className="fa-2x mt-1 mb-5" />
+                                </a>
                             </div>
                         </div>
                     </div>
