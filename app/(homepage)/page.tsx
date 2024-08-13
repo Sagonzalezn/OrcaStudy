@@ -16,7 +16,7 @@ export default function Homepage() {
             <div>
                 <Accordian classname="max-w-lg">
                     <AccordianItem value="1" trigger="¿Cómo me inscribo en un curso?">
-                    Para inscribirte en un curso, simplemente crea una cuenta gratuita, navega por nuestra selección de cursos, y haz clic en el botón "Comprar" en la página del curso que te interesa. Puedes completar el pago utilizando tu método de pago preferido.
+                    Para inscribirte en un curso, simplemente crea una cuenta gratuita, navega por nuestra selección de cursos, y haz clic en el botón COMPRAR en la página del curso que te interesa. Puedes completar el pago utilizando tu método de pago preferido.
                     </AccordianItem>
                     <AccordianItem value="2" trigger="¿Los cursos tienen fechas de inicio y finalización?">
                     Nuestros cursos son autoguiados, lo que significa que puedes comenzar y completar el curso a tu propio ritmo. Por esto, no tienen fechas específicas de inicio y finalización.
