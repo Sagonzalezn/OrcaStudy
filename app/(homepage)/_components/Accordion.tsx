@@ -16,7 +16,7 @@ type AccordianContextType = {
 const AccordianContext = createContext<AccordianContextType | undefined>(undefined);
 
 export default function Accordian({ children, value, onChange, ...props }: AccordianProps) {
-    const [selected, setSelected] = useState(value);
+    const [selected, setSelected] = useState(value || null);
 
     useEffect(() => {
         onChange?.(selected);
