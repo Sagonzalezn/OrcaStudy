@@ -28,7 +28,7 @@ export const HomeSection = () => {
         <main className="font-roboto">
 
             <div className="flex flex-col items-center mt-9 lg:mt-20 bg-primary pt-20 px-20 top-2">
-                <h2 className="text-4xl sm:text-3.5xl lg:text-4xl text-left tracking-wide text-white">
+                <h2 className="text-4xl sm:text-3.5xl lg:text-4xl text-left tracking-wide text-white font-bold">
                     ¡Bienvenido a OrcaStudy, aprende
                     {" "}
                     a buen precio con nuestros cursos en línea!
@@ -66,7 +66,7 @@ export const HomeSection = () => {
              </div>
 
              <div className="flex flex-col items-center mt-9 lg:mt-20 bg-white pt-20 px-20 top-0">
-                <h2 className="text-4xl sm:text-3.5xl lg:text-4xl text-left tracking-wide">
+                <h2 className="text-4xl sm:text-3.5xl lg:text-4xl text-left tracking-wide font-bold">
                     ¡Lleva tu desarrollo profesional al siguiente nivel 
                     {" "}
                     con nuestros cursos en linea!
@@ -82,6 +82,11 @@ export const HomeSection = () => {
                     >
                     ¡Quiero matricularme!
                     </a>
+                </div>
+                <div className="flex flex-col items-center  lg:mt-20 bg-white px-20">
+                    <h2 className="text-4xl sm:text-3.5xl lg:text-4xl text-left tracking-wide font-bold">
+                            Preguntas Frecuentes:                        
+                    </h2>
                 </div>
              </div>
         </main>
