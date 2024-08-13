@@ -14,7 +14,7 @@ export default function Homepage() {
                 <HomeSection/>
             </div>
             <div>
-                <Accordian className="max-w-lg">
+                <Accordian value=''>
                     <AccordianItem value="1" trigger="¿Cómo me inscribo en un curso?">
                     Para inscribirte en un curso, simplemente crea una cuenta gratuita, navega por nuestra selección de cursos, y haz clic en el botón COMPRAR en la página del curso que te interesa. Puedes completar el pago utilizando tu método de pago preferido.
                     </AccordianItem>
